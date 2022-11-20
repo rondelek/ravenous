@@ -1,0 +1,97 @@
+.searchBar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 25rem;
+    background-image: url('https://content.codecademy.com/programs/react/ravenous/background_search_desktop.jpg?_gl=1*128imr8*_ga*NzM2ODA5MDU4MC4xNjY4ODYyMzMz*_ga_3LRZM6TM9L*MTY2ODg3NzY4NS40LjAuMTY2ODg3NzY4NS4wLjAuMA..');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__sort {
+
+        & ul {
+            display: flex;
+            justify-content: center;
+            color: #ffffff;
+            list-style-type: none;
+            margin-bottom: 2.22rem;
+        }
+
+        & li {
+            width: 4.33rem;
+            border-bottom: 1px solid #fff;
+            line-height: 1.13;
+            text-align: center;
+            font-weight: 600;
+            font-size: .83rem;
+            transition: color .25s;
+            padding: 0 2.58rem .33rem 2.58rem;
+            cursor: pointer;
+
+            &:hover {
+                color: #d4cfcf;
+            }
+        }
+    } 
+
+    &__fields {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2.88rem;
+
+        & input {
+            width: 21rem;
+            margin-right: 2.22rem;
+            border: 1px solid #fff;
+            border-radius: 4px;
+            font-size: .77rem;
+            font-weight: 500;
+            padding: .66rem 1rem;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    &__submit {
+        text-align: center;
+
+        & a {
+            border-radius: 4px;
+            background-color: #cca353;
+            color: #ffffff;
+            font-weight: 600;
+            padding: .72rem 1.7rem;
+            transition: background-color .5s;   
+
+            &:hover {
+                cursor: pointer;
+                background-color: #a7874b;
+            }
+        }
+    }
+}
+  
+  
+  
+@media only screen and (max-width: 560px) {
+    .searchBar {
+        background-image: url('https://content.codecademy.com/programs/react/ravenous/background_search_mobile.jpg?_gl=1*128imr8*_ga*NzM2ODA5MDU4MC4xNjY4ODYyMzMz*_ga_3LRZM6TM9L*MTY2ODg3NzY4NS40LjAuMTY2ODg3NzY4NS4wLjAuMA..');
+
+        &__sort ul {
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+
+        &__fields {
+            flex-direction: column;
+            align-items: center;
+
+            & input {
+                margin-right: 0;
+                margin-bottom: .86rem;
+            }
+        }
+    }
+}

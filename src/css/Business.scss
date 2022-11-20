@@ -1,0 +1,52 @@
+.business {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 16rem;
+    font-family: Poppins;
+    margin: 1rem;
+
+    &__img {
+        margin-bottom: 1rem;
+        
+        img {
+            height: 16rem;
+            width: 16rem;
+        }
+    }
+
+    &__name {
+        margin-bottom: .5rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+
+        &__address {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        &__reviews {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: right;
+        }
+
+        p {
+            margin: 0.2rem 0;
+        }
+
+        h3 {
+            color: #CCA353;
+            font-weight: 600;
+            margin: 0.2rem 0;
+        }
+    }
+}
+
