@@ -1,16 +1,14 @@
 import React from "react";
 import Business from "./Business";
 
-export default function BusinessList() {
+
+export default function BusinessList(props) {
     return (
         <div className="businessList">
-            <Business/>
-            <Business/>
-            <Business/>
-            <Business/>
-            <Business/>
-            <Business/>
+            {props.businesses.map(business => {
+                return <Business business={business} />
+            })}
         </div>
 
     )
-}
+} 
