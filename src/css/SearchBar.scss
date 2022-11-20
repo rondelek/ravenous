@@ -31,6 +31,11 @@
             &:hover {
                 color: #d4cfcf;
             }
+
+            &.active {
+                border-bottom: 1px solid #f0c36c!important;
+                color: #f0c36c;
+            }
         }
     } 
 
@@ -57,11 +62,12 @@
     &__submit {
         text-align: center;
 
-        & a {
+        & button {
             border-radius: 4px;
             background-color: #cca353;
             color: #ffffff;
             font-weight: 600;
+            border-style: none;
             padding: .72rem 1.7rem;
             transition: background-color .5s;   
 
