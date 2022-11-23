@@ -6,7 +6,7 @@ export default function BusinessList(props) {
     return (
         <div className="businessList">
             {props.businesses.map(business => {
-                return <Business business={business} />
+                return <Business business={business} key={business.id}/>
             })}
         </div>
 

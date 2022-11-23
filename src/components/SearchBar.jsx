@@ -30,20 +30,25 @@ export default function SearchBar({searchYelp}) {
     }
 
     function handleSortByChange(sortByOption) {
-        return setSearch({
-            sortBy: sortByOption
+        return setSearch((prev)=>{
+            prev['sortBy']= sortByOption
+            return prev
         });
-    }
+        };
 
     function handleTermChange(event) {
-        return setSearch({
-            term: event.target.value
+        console.log('handled term change')
+        return setSearch((prev)=>{
+            prev['term']=event.target.value
+            return prev
         });
     }
 
     function handleLocationChange(event) {
-        return setSearch({
-            location: event.target.value
+        console.log('handled location change')
+        return setSearch((prev)=>{
+            prev.location=event.target.value
+            return prev
         });
     }
 
